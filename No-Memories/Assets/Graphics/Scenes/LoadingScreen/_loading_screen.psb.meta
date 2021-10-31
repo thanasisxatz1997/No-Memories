@@ -100,9 +100,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 2172
-      width: 438
-      height: 195
-    spriteID: 067eeacaa4f8a2741aa13f5352df3b4e
+      width: 1070
+      height: 477
+    spriteID: 53db1035e84ea2046bfb57db47cb42f3
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -112,8 +112,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -3200, y: 2037}
-  - name: Background
+    uvTransform: {x: -1381, y: 1331}
+  - name: Backgorund
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -124,7 +124,7 @@ ScriptedImporter:
       y: 4
       width: 3840
       height: 2160
-    spriteID: ddc0242b9a93794498548bf32f75981f
+    spriteID: 2adac4c746091e74aa4d00a0b60733ff
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -135,7 +135,29 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
@@ -158,22 +180,22 @@ ScriptedImporter:
     spriteName: Eyes
     isGroup: 0
     parentIndex: -1
-    spriteID: 067eeacaa4f8a2741aa13f5352df3b4e
-    layerID: 12
+    spriteID: 53db1035e84ea2046bfb57db47cb42f3
+    layerID: 33
     mosaicPosition: {x: 4, y: 2172}
-  - name: Background
-    spriteName: Background
+  - name: Backgorund
+    spriteName: Backgorund
     isGroup: 0
     parentIndex: -1
-    spriteID: ddc0242b9a93794498548bf32f75981f
-    layerID: 2
+    spriteID: 2adac4c746091e74aa4d00a0b60733ff
+    layerID: 27
     mosaicPosition: {x: 4, y: 4}
   characterData:
     bones: []
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
-  generateGOHierarchy: 0
+  generateGOHierarchy: 1
   textureAssetName: _loading_screen Texture
   prefabAssetName: _loading_screen Prefab
   spriteLibAssetName: _loading_screen Sprite Lib
