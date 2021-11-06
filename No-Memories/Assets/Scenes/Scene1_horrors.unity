@@ -434,7 +434,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &190479195
+--- !u!1001 &873500549
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -455,11 +455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6379603939155540051, guid: b344b7c26042d004e9b381ac4cfef53e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.61
+      value: -16.42632
       objectReference: {fileID: 0}
     - target: {fileID: -6379603939155540051, guid: b344b7c26042d004e9b381ac4cfef53e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.94
+      value: -10.02
       objectReference: {fileID: 0}
     - target: {fileID: -6379603939155540051, guid: b344b7c26042d004e9b381ac4cfef53e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -499,6 +499,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -2388900732422209841, guid: b344b7c26042d004e9b381ac4cfef53e, type: 3}
+--- !u!1 &873500550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8263152425645250464, guid: b344b7c26042d004e9b381ac4cfef53e, type: 3}
+  m_PrefabInstance: {fileID: 873500549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &873500551
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 873500550}
+  m_Enabled: 1
+  m_SortingLayerID: -193556527
+  m_SortingLayer: 1
+  m_SortingOrder: 0
 --- !u!1001 &942113747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -580,19 +596,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -5407964220276305210, guid: ede61ade4f8077141847c6b555374fbe, type: 3}
---- !u!1 &1338189454 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8263152425645250464, guid: b344b7c26042d004e9b381ac4cfef53e, type: 3}
-  m_PrefabInstance: {fileID: 190479195}
-  m_PrefabAsset: {fileID: 0}
---- !u!210 &1338189455
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338189454}
-  m_Enabled: 1
-  m_SortingLayerID: -193556527
-  m_SortingLayer: 1
-  m_SortingOrder: 0
