@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerDemo : MonoBehaviour
 {
     private int amountOfJumpsLeft;//how many jumps we have left (while in the air)
     private int facingDirection=1;//direction we are facing(-1 will be left, 1 will be right)
