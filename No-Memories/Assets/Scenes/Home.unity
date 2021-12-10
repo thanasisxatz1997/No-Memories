@@ -216,6 +216,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 1153600729478009658, guid: 8f0058aba7b7cc947bd7a5c874925790, type: 3}
+--- !u!1 &891458880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2802322482325569402, guid: bfa600fd5ccac2841b2c1e8bfd3af39a, type: 3}
+  m_PrefabInstance: {fileID: 1446909961}
+  m_PrefabAsset: {fileID: 0}
+--- !u!210 &891458881
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891458880}
+  m_Enabled: 1
+  m_SortingLayerID: 1815175649
+  m_SortingLayer: -1
+  m_SortingOrder: 0
 --- !u!1 &1242789577
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +325,10 @@ PrefabInstance:
     - target: {fileID: -8912483278007383897, guid: bfa600fd5ccac2841b2c1e8bfd3af39a, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8283061034708886288, guid: bfa600fd5ccac2841b2c1e8bfd3af39a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 118.2
       objectReference: {fileID: 0}
     - target: {fileID: -7710270500299616762, guid: bfa600fd5ccac2841b2c1e8bfd3af39a, type: 3}
       propertyPath: m_Color.a

@@ -6,7 +6,7 @@ using TMPro;
 public class WoblyText : MonoBehaviour
 {
     public TMP_Text textComponent;
-    public bool isWobling=false;
+    public bool isWobling=true;
     private void Update()
     {
         if (isWobling == true)

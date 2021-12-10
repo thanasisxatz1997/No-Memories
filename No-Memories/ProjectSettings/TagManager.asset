@@ -14,7 +14,7 @@ TagManager:
   - Player
   - Colider
   - Ground
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -38,9 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 1815175649
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Player
     uniqueID: 4101410769
+    locked: 0
+  - name: Enemy
+    uniqueID: 2778330735
     locked: 0
