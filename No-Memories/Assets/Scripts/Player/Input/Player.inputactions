@@ -11,7 +11,8 @@
                     "id": "91695d14-b679-41dc-8a85-ae8101fc15cb",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Jump",
@@ -19,7 +20,17 @@
                     "id": "33a5aada-53fc-4596-9219-8fd36ee0cf93",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TwirlAttack",
+                    "type": "Button",
+                    "id": "0006391f-fcc7-4484-8451-8a0e716a535e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -86,6 +97,17 @@
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b50772ca-7436-45c9-8150-b215b6843f22",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "TwirlAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

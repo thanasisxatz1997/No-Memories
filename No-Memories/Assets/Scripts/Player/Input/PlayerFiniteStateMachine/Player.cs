@@ -12,6 +12,7 @@ public class Player : MonoBehaviour//Monobehaviour cuz it sits on our player Obj
     public PlayerJumpState JumpState { get; private set; }
     public PlayerInAirState InAirState { get; private set; }
     public PlayerLandState LandState { get; private set; }
+    public PlayerTwirlAttackState TwirlState { get; private set; }
 
     [SerializeField]
     private PlayerData playerData;
@@ -27,7 +28,12 @@ public class Player : MonoBehaviour//Monobehaviour cuz it sits on our player Obj
 
     [SerializeField]
     private Transform groundCheck;
+    public Transform projectilelaunchOffset;
 
+    #endregion
+
+    #region Prefabs
+    public ProjectileBehaviour projectilePrefab;
     #endregion
 
     #region Other Variables
@@ -49,6 +55,7 @@ public class Player : MonoBehaviour//Monobehaviour cuz it sits on our player Obj
         JumpState = new PlayerJumpState(this, StateMachine, playerData, "inAir");
         InAirState = new PlayerInAirState(this, StateMachine, playerData, "inAir");
         LandState = new PlayerLandState(this, StateMachine, playerData, "land");
+        TwirlState = new PlayerTwirlAttackState(this, StateMachine, playerData, "TwirlAttack");
     }
 
     private void Start()

@@ -9,11 +9,13 @@ public class PlayerInputHandler : MonoBehaviour
     public int NormInputX { get; private set; }
     public int NormInputY { get; private set; }
     public bool JumpInput { get; private set; }
+    public bool TwirlAttackInput { get; private set; }
 
     [SerializeField]
     private float inputHoldTime=0.2f;
 
     private float jumpInputStartTime;
+    private float twirlAttackInputTime;
 
     private void Update() //used when monobehaviour
     {
@@ -40,6 +42,21 @@ public class PlayerInputHandler : MonoBehaviour
     public void UseJumpInput()
     {
         JumpInput = false;
+    }
+
+    public void OnTwirlAttackInput(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            TwirlAttackInput = true;
+            Debug.Log("TWIIIIIIIIIIRL");
+            twirlAttackInputTime = Time.time;
+        }
+    }
+
+    public void UseTwirlAttackInput(InputAction.CallbackContext context)
+    {
+        TwirlAttackInput = false;
     }
 
     private void CheckJumpInputHoldTime()
