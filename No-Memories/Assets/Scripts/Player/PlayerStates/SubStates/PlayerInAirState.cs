@@ -6,6 +6,7 @@ public class PlayerInAirState : PlayerState
 {
     private int xInput;
     private bool isGrounded;
+    private bool twirlInput;
     public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
     }
@@ -32,10 +33,15 @@ public class PlayerInAirState : PlayerState
         base.LogicUpdate();
 
         xInput = player.InputHandler.NormInputX;
+        twirlInput = player.InputHandler.TwirlAttackInput;
 
         if(isGrounded && player.CurrentVelocity.y<0.01f)
         {
             stateMachine.ChangeState(player.LandState);
+        }
+        else if(twirlInput && player.TwirlState.CheckIfCanTwirl())
+        {
+            stateMachine.ChangeState(player.TwirlState);
         }
         else
         {

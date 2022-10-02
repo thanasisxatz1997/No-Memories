@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class PlayerTwirlAttackState : PlayerAbilityState
 {
+
+    public bool canTwirl { get; private set; }
+
+    private float lastTwirlTime;
+
     public PlayerTwirlAttackState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
     }
 
     
-
-    public override void Enter()
+    public bool CheckIfCanTwirl()
     {
-        base.Enter();
-        
-        isAbilityDone = true;
+        return canTwirl && Time.time >= lastTwirlTime + playerData.twirlCooldown;
+    }
+
+    public void ResetCanTwirl()
+    {
+        canTwirl = true;
     }
 
 }
